@@ -13,24 +13,25 @@
     <title>JavaScript Playground</title>
   </head>
   <body>
-    <header>
-      <h1>Header</h1>
+    <header style="background-color: bisque; color: cornflowerblue">
+      <h1 style="font-style: oblique">Müso's Web Development Playground</h1>
     </header>
     <nav>
+      <h4 style="background-color: aqua">This is the navigation place</h4>
       <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">Our team</a></li>
         <li><a href="#">Projects</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
-
       <form>
         <input type="search" name="q" placeholder="Search query" />
         <input type="submit" value="Go!" />
       </form>
     </nav>
 
-    <main>
+    <main style="background-color: beige">
+      <h4>This is the main area</h4>
       <article>
         <h2>Article heading</h2>
         <p>
@@ -49,22 +50,20 @@
           >.
         </p>
       </article>
-      <div class="einkaufswagen">
-        <h2>Einkaufswagen</h2>
-        <ul>
-          <li>
-            <p>
-              <a href=""><strong>Silber Ohrringe</strong></a
-              >: $99.95.
-            </p>
-          </li>
-          <li>...</li>
-        </ul>
-        <p>Kosten gesamt: $237.89</p>
+      <div class="interactions">
+        <h2>Interactions: Alert, Prompt and Confirm</h2>
+        <h3>Alert</h3>
+        <button id="alertBtn" onclick="alertBtn()">alert</button>
+        <h3>Prompt</h3>
+        <button id="nameBtn" onclick="nameBtn()">name</button>
+        <input type="text" name="name" id="nameTextField" />
+        <h3>Confirm</h3>
+        <button id="confirmBtn" onclick="confirmBtn()">confirm</button>
       </div>
     </main>
 
-    <footer>
+    <footer style="background-color: coral">
+      <h4>This is the footer area</h4>
       <p>© Copyright 2050 by Mueso. All rights reversed.</p>
     </footer>
   </body>

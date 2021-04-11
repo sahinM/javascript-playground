@@ -53,3 +53,23 @@ let reverse2 = (word) => {
 
 reverse("I am a basic function");
 reverse2("I am an Arrow Function");
+
+/**
+ * using map function on some names using the implemented reverse function above.
+ */
+const names = ["Müso", "Yasemin", "Hans"];
+
+var nameBtn = function () {
+  let name = prompt("Please type in your name");
+  document.getElementById("nameTextField").value = name;
+};
+
+var alertBtn = function () {
+  let alertMsg = "This is an alert message!";
+  alert(alertMsg);
+};
+
+var confirmBtn = function () {
+  let confirmMsg = "Confirm or Cancel";
+  confirm(confirmMsg);
+};
