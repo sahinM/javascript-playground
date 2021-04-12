@@ -71,5 +71,9 @@ var alertBtn = function () {
 
 var confirmBtn = function () {
   let confirmMsg = "Confirm or Cancel";
-  confirm(confirmMsg);
+  let confirmed = confirm(confirmMsg);
+  let confirmCheckBox = document.getElementById("confirmCheckbox");
+  confirmed
+    ? confirmCheckBox.setAttribute("checked", true)
+    : confirmCheckBox.removeAttribute("checked");
 };
